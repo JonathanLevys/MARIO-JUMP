@@ -1,6 +1,7 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 
+
 const jump = () => {
     mario.classList.add('jump');
 
@@ -28,9 +29,11 @@ const loop = setInterval (() => {
      mario.style.width = '75px'
      mario.style.marginLeft = '50px'
 
-      clearInterval(loop);
+        clearInterval(loop);
     }
 
 }, 10);
+
+
 
 document.addEventListener('keydown', jump)
